@@ -371,7 +371,7 @@ service thermal-engine /vendor/bin/thermal-engine
 service qmuxd /vendor/bin/qmuxd
     class main
     user radio
-    group radio audio bluetooth wakelock gps
+    group radio system audio bluetooth wakelock gps
     writepid /dev/cpuset/system-background/tasks
 
 service perfd /vendor/bin/perfd
